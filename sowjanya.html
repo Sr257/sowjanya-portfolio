@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sowjanya Peddakapu | Full Stack Java Developer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; animation: fadeIn 1s ease; }
+
+    header { background: #2e3b55; color: white; padding: 3rem 1rem 1rem 1rem; text-align: center; animation: slideIn 1s ease; }
+    header img { width: 150px; height: 150px; border-radius: 50%; margin-top: 1rem; border: 4px solid white; }
+    header h1 { margin-top: 1rem; font-size: 2.5rem; }
+    header p { font-size: 1.1rem; margin-top: 0.5rem; }
+    
+    main { max-width: 1200px; margin: auto; padding: 3rem 2rem; background: white; margin-top: -3rem; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); animation: fadeInUp 1s ease; }
+    
+    section { margin-bottom: 2rem; opacity: 0; transform: translateY(50px); animation: fadeInUp 0.5s forwards; }
+
+    section h2, section h3 { color: #2e3b55; font-size: 1.8rem; margin-bottom: 1rem; }
+    section h2 { border-bottom: 2px solid #eee; padding-bottom: 0.3rem; }
+    
+    ul { list-style-type: none; padding-left: 0; }
+    li { font-size: 1rem; margin-bottom: 0.8rem; line-height: 1.6; }
+
+    footer { text-align: center; padding: 1rem; background: #2e3b55; color: white; margin-top: 2rem; }
+
+    .contact-info { margin-top: 1rem; }
+    .contact-info a { color: #2e3b55; text-decoration: none; transition: color 0.3s; }
+    .contact-info a:hover { color: #fff; text-decoration: underline; }
+
+    .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; }
+    .container > div { flex: 1; }
+    .experience { display: flex; flex-direction: column; gap: 1rem; }
+    .experience h3 { font-size: 1.3rem; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .skill { background: #f0f2f5; padding: 0.5rem 1rem; border-radius: 8px; font-size: 1rem; opacity: 0; transform: translateY(30px); animation: fadeInUp 0.7s forwards; }
+    
+    .portfolio-links a { margin-right: 1rem; font-size: 1rem; color: #2e3b55; text-decoration: none; transition: color 0.3s; }
+    .portfolio-links a:hover { color: #fff; text-decoration: underline; }
+
+    /* Scroll Animation */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
+
+    /* Hover Animation */
+    .skill:hover {
+      transform: translateY(-5px);
+      background-color: #2e3b55;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .portfolio-links a:hover {
+      transform: scale(1.05);
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <img src="image/souji pic.jpeg" alt="Sowjanya Pedda's Profile Picture" /> <!-- Use relative path or correct path here -->
+    <h1>Sowjanya Peddakapu</h1>
+    <p>Full Stack Java Developer</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Objective</h2>
+      <p>Full stack Java Developer with 7 years of experience in developing enterprise-level applications across various industries like banking, retail, and healthcare. Strong in both front-end and back-end technologies, with expertise in Java, Spring Boot, JavaScript frameworks, and cloud computing.</p>
+    </section>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Experienced in building robust, scalable applications, leading teams, and working with cloud technologies to deliver end-to-end solutions. Proven ability to manage the full software development lifecycle from analysis to implementation and support.</p>
+    </section>
+
+    <section>
+      <h2>Portfolio</h2>
+      <p>Check out some of my key projects:</p>
+      <div class="portfolio-links">
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">ReactJS</div>
+        <div class="skill">Angular</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Jenkins</div>
+        <div class="skill">MySQL</div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="container">
+        <div>
+          <h3>AutoNation, FL – Full Stack Java Developer (Feb 2023 – Present)</h3>
+          <ul>
+            <li>Developed and deployed scalable microservices using Spring Boot, MongoDB, MySQL, and AWS.</li>
+            <li>Implemented WebSockets and React Hooks for real-time data updates in the frontend.</li>
+            <li>Deployed applications on AWS EC2 and automated CI/CD pipelines with Jenkins and Docker.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Kohl’s, WI – Full Stack Java Developer (Sep 2021 – Jan 2023)</h3>
+          <ul>
+            <li>Built secure, scalable applications using ReactJS, Redux, and Firebase Auth.</li>
+            <li>Automated testing with Protractor, Cypress, and Jenkins to improve deployment efficiency.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Master’s in Computer Science – Western Illinois University, Macomb, IL</li>
+        <li>Bachelor’s in Information Technology – JNTUH, Hyderabad, India</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:sowjanyapedda1111@gmail.com">sowjanyapedda1111@gmail.com</a> | <a href="tel:+12055658014">+1(205) 565-8014</a></p>
+  </footer>
+
+  <script>
+    // Scroll animation trigger
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        if (section.getBoundingClientRect().top <= window.innerHeight) {
+          section.style.opacity = 1;
+          section.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
